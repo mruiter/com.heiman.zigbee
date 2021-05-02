@@ -1,1 +1,3 @@
-support for heiman zigbee devices
+# Heiman Zigbee
+
+Heiman Zigbee support for Homey

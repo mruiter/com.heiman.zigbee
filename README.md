@@ -1,3 +1,3 @@
 # Heiman Zigbee
 
-support for heiman zigbee devices# com.zigbee.heiman
+Heiman Zigbee support for Homey

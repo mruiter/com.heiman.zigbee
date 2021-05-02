@@ -1,0 +1,53 @@
+{
+    "id": "HS2WDE",
+    "name": {
+      "en": "Heiman Siren",
+      "nl": "Heiman Sirene",
+      "de": "Heiman Siren"
+    },
+    "class": "sensor",
+    "capabilities": [
+      "alarm_battery"
+    ],
+    "energy": {
+      "batteries": [
+        "INTERNAL"
+      ]
+    },
+    "zigbee": {
+      "manufacturerName": "Heiman",
+      "productId": [
+        "WarningDevice"
+      ],
+      "endpoints": {
+        "1": {
+          "clusters": [
+            0,
+            1,
+            3,
+			4,
+            9,
+            1280,
+			1282
+          ],
+          "bindings": [
+            3,
+			25
+          ]
+        }
+      },
+      "learnmode": {
+        "image": "/drivers/HS2WDE/assets/learnmode.svg",
+        "instruction": {
+          "en": "Press the pair button on the back of the Motion Sensor for 2 or 3 seconds until LED starts blinking.",
+          "nl": "Houd de koppelingsknop aan de achterkant van de bewegingssensor 2 of 3 seconden ingedrukt totdat de LED begint te knipperen.",
+          "de": "Drücken Sie die Paartaste auf der Rückseite des Bewegungssensors 2 oder 3 Sekunden lang, bis die LED zu blinken beginnt."
+        }
+      }
+    },
+    "images": {
+      "large": "/drivers/HS2WDE/assets/images/large.png",
+      "small": "/drivers/HS2WDE/assets/images/small.png"
+    }
+  }
+  

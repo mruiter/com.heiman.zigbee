@@ -1,0 +1,27 @@
+{
+  "id": "com.heiman.zigbee",
+  "version": "1.0.0",
+  "compatibility": "6.0.0",
+  "sdk": 3,
+  "name": {
+    "en": "Heiman Zigbee"
+  },
+  "brandColor": "#f99c00",
+  
+  "description": {
+    "en": "Homey support for heiman zigbee devices"
+  },
+  "category": [
+	"security",
+    "appliances"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Marco Ruiter",
+    "email": "mruiter@tuxweb.nl"
+  }
+}

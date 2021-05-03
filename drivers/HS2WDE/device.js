@@ -2,14 +2,14 @@
 'use strict';
 
 const { ZigBeeDevice } = require('homey-zigbeedriver');
+const { Cluster, debug, CLUSTER } = require('zigbee-clusters');
+const HeimanSpecificCluster = require('../../lib/HeimanSpecificCluster')
 
-const { CLUSTER } = require('zigbee-clusters');
-
-const OnOffBoundCluster = require('../../lib/OnOffBoundCluster');
+Cluster.addCluster(HeimanSpecificCluster);
 
 class HS2WDE extends ZigBeeDevice {
 
-  onNodeInit({ zclNode }) {
+  async onNodeInit({ zclNode }) {
     this.enableDebug(); // only for debugging purposes
     this.printNode(); // only for debugging purposes
     // Register measure_battery capability and configure attribute reporting
@@ -26,13 +26,10 @@ class HS2WDE extends ZigBeeDevice {
         },
       },
     });
-
-    this.zclNode.endpoints[1].bind(CLUSTER.ON_OFF.NAME, new OnOffBoundCluster({
-      onWithTimedOff: this._onWithTimedOffCommandHandler.bind(this),
-    }));
+	
+	
   }
-
-
+  
 }
 
 module.exports = HS2WDE;
